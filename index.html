@@ -20,20 +20,28 @@
     Audio samples accompanying the paper:<br>
     <i>"A Study of Binaural Deep Beamforming with Interpretable Beampatterns Guided by Time-Varying RTF"</i>
   </p>
-
+<p style="text-align:justify; max-width:800px; margin:20px auto;">
+The proposed framework employs continuously tracked Relative Transfer
+Functions (RTFs) to guide the estimation of the time-varying beamformer weights
+in dynamic acoustic environments. The RTFs provide spatial cues that enable
+the network to adapt its beampatterns in real time and maintain focus on the
+moving speaker. The system generates a binaural output that
+preserves the spatial characteristics of the target source, promoting natural
+listening and supporting applications such as hearing aids and hearable devices.
+</p>
   <!-- ================= Example 1: 3 dB ================= -->
   <section>
     <h2>Example 1 – Babble Noise (3 dB SNR)</h2>
 
-    <b>Mixture</b><br>
+    <b>Mixture (Stereo)</b><br>
     <audio controls src="audio/mixture/Dynamic_Speaker_3_SNR_Mixture.wav"></audio>
     <img src="audio/spectograms/mixture_6_spectrogram.png" alt="Mixture spectrogram (3 dB)">
 
-    <b>Enhanced (Estimated)</b><br>
+    <b>Enhanced (Stereo)</b><br>
     <audio controls src="audio/enhanced/Dynamic_Speaker_3_SNR_Enhanced.wav"></audio>
     <img src="audio/spectograms/estimated_6_spectrogram.png" alt="Estimated spectrogram (3 dB)">
 
-    <b>Clean Reference</b><br>
+    <b>Clean Reference (Stereo)</b><br>
     <audio controls src="audio/clean/Dynamic_Clean_Speech.wav"></audio>
     <img src="audio/spectograms/clean_6_spectrogram.png" alt="Clean spectrogram (3 dB)">
   </section>
@@ -42,15 +50,15 @@
   <section>
     <h2>Example 2 – Babble Noise (6 dB SNR)</h2>
 
-    <b>Mixture</b><br>
+    <b>Mixture (Stereo)</b><br>
     <audio controls src="audio/mixture/Dynamic_Speaker_6_SNR_Mixture.wav"></audio>
     <img src="audio/spectograms/mixture_4_spectrogram.png" alt="Mixture spectrogram (6 dB)">
 
-    <b>Enhanced (Estimated)</b><br>
+    <b>Enhanced (Stereo)</b><br>
     <audio controls src="audio/enhanced/Dynamic_Speaker_6_SNR_Enhanced.wav"></audio>
     <img src="audio/spectograms/estimated_4_spectrogram.png" alt="Estimated spectrogram (6 dB)">
 
-    <b>Clean Reference</b><br>
+    <b>Clean Reference (Stereo)</b><br>
     <audio controls src="audio/clean/Dynamic_Clean_Speech_2.wav"></audio>
     <img src="audio/spectograms/clean_4_spectrogram.png" alt="Clean spectrogram (6 dB)">
   </section>
